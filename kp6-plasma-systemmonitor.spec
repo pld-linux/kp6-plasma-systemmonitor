@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.3.5
+%define		kdeplasmaver	6.4.0
 %define		qtver		5.15.2
 %define		kpname		plasma-systemmonitor
 %define		kf6ver		5.39.0
 
 Summary:	plasma-systemmonitor
 Name:		kp6-%{kpname}
-Version:	6.3.5
+Version:	6.4.0
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	475205f9fceb124377e88853e779245a
+# Source0-md5:	81a2bd3fb271e577948793c9462cd3a1
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel >= 5.15.0
@@ -96,7 +96,6 @@ rm -rf $RPM_BUILD_ROOT
 %{_libdir}/qt6/qml/org/kde/ksysguard/page
 %{_libdir}/qt6/qml/org/kde/ksysguard/table
 %{_desktopdir}/org.kde.plasma-systemmonitor.desktop
-%{_datadir}/config.kcfg/systemmonitor.kcfg
 %{_datadir}/kconf_update/plasma-systemmonitor.upd
 %attr(755,root,root) %{_datadir}/kconf_update/plasma-systemmonitor-replace-vmpss.py
 %{_datadir}/knsrcfiles/plasma-systemmonitor.knsrc

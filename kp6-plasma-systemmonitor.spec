@@ -57,6 +57,12 @@ plasma-dekstop and makes use of the ksystemstats daemon to provide
 sensor information. It allows extensive customisation of pages, so it
 can be made to show exactly which data people want to see.
 
+%description -l pl.UTF-8
+Aplikacja do monitorowania zasobów systemowych.
+
+plasma-systemmonitopr dostarcza interfejs do monitorowania systemowych
+czujników, informacji o procesach i innych zasobach systemowych.
+
 %prep
 %setup -q -n %{kpname}-%{version}
 

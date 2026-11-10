@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeplasmaver	6.8.2
+%define		kdeplasmaver	6.8.3
 %define		qtver		5.15.2
 %define		kpname		plasma-systemmonitor
 %define		kf6ver		5.39.0
 
 Summary:	plasma-systemmonitor
 Name:		kp6-%{kpname}
-Version:	6.8.2
+Version:	6.8.3
 Release:	1
 License:	LGPL v2.1+
 Group:		X11/Libraries
 Source0:	https://download.kde.org/stable/plasma/%{kdeplasmaver}/%{kpname}-%{version}.tar.xz
-# Source0-md5:	aea36135e57fbb7fd969429e0a8e44c4
+# Source0-md5:	6a87c0bf9734992a8933eaac9fd17a41
 URL:		http://www.kde.org/
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6DBus-devel >= 5.15.0
